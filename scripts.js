@@ -47,7 +47,7 @@ function click() {
 function match(cardOne,cardTwo) {
     if(cardOne.dataset.index == cardTwo.dataset.index) {
 
-        score.innerHTML = parseInt(score.innerHTML) + 1;
+        score.innerHTML = parseInt(score.innerHTML) + 1.5 + ' jogador de basquete';
 
         cardOne.classList.remove('flip');
         cardTwo.classList.remove('flip');

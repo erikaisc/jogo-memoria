@@ -61,7 +61,7 @@ body{
 
 .back{
     background-image: url('./assets/verso.png');
-    
+    background-size: cover;  
 }
 
 img{
