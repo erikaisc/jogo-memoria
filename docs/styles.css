@@ -5,9 +5,8 @@
 }
 
 body{
-    background: rgb(114,147,213);
-    background: linear-gradient(118deg, rgba(114,147,213,0.9976365546218487) 0%, rgba(240,156,252,1) 100%);
-/* teste    */
+    background-color: #adccf5;
+
     
 }
 
@@ -23,6 +22,7 @@ body{
     margin-top: 20px;
 
     font-family: 'Press Start 2P', cursive;
+    
 }
 
 .score{
@@ -37,11 +37,17 @@ body{
     gap: 1rem;
     margin: auto;
     padding: 20px;
+    
+}
+
+.container-hide{
+    display: none;
 }
 
 .cell div{
     height: 130px;
     border-radius: 4px;
+    
 }
 
 .cell{
@@ -84,3 +90,4 @@ img{
 .show{
     transform: rotateY(0deg);
 }
+

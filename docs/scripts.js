@@ -1,10 +1,21 @@
 const card = document.querySelectorAll('.cell');
 const front = document.querySelectorAll('.front');   
+const back = document.querySelectorAll('.back');
 const container = document.querySelector('.container');
 const score = document.querySelector('.score span');
+const audio = document.querySelector('.win');
+const audioFim = document.querySelector('.parabens');
 
 shuffleImage();
 click();
+
+function playAudio() {
+    audio.play();
+}
+
+function playParabens() {
+    audioFim.play();
+}
 
 function shuffleImage () {
    
@@ -49,21 +60,27 @@ function match(cardOne,cardTwo) {
         
 
         score.innerHTML = parseInt(score.innerHTML) + 1 + ' jogador de basquete';
-
-        
-
-        
+             
         cardOne.classList.remove('flip');
         cardTwo.classList.remove('flip');
 
         cardOne.classList.add('match');
         cardTwo.classList.add('match');
+        
+       playAudio();
+
+        if(score.innerHTML == '6 jogador de basquete') {
+            score.innerHTML = 'Você venceu! Aqui pra você : <3';
+            playParabens();
+            container.classList.add('container-hide');
+        }
+
     } else{
 
         setTimeout(() => {
             cardOne.classList.remove('flip');
             cardTwo.classList.remove('flip');
-        } , 1800);
+        } , 1000);
 
 
     }
