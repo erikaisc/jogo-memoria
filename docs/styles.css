@@ -5,7 +5,9 @@
 }
 
 body{
-    background-color: #adccf5;
+    background: linear-gradient(135deg, #ffffff 25%, transparent 25%) -72px 0, linear-gradient(225deg, #ffffff 25%, transparent 25%) -72px 0, linear-gradient(315deg, #ffffff 25%, transparent 25%), linear-gradient(45deg, #ffffff 25%, transparent 25%);
+    background-size: 144px 144px;
+    background-color: #d80012;
 
     
 }
@@ -23,12 +25,25 @@ body{
 
     font-family: 'Press Start 2P', cursive;
     
+ 
+    color: black;
+    border-radius: 6px;
+    box-shadow: 3px 4px 13px -3px rgba(0,0,0,0.66);
+
+    background: rgba(255,255,255,0.75);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.375);
 }
 
 .score{
     margin-top: 20px;
-    font-size: 12px;
+    font-size: 12px;;
+
+    
 }
+
+
 
 .container{
     max-width: 960px;
@@ -40,19 +55,16 @@ body{
     
 }
 
-.container-hide{
-    display: none;
-}
-
 .cell div{
     height: 130px;
-    border-radius: 4px;
+    border-radius: 8px;
     
 }
 
 .cell{
     position: relative;
     cursor: pointer;
+    box-shadow: 3px 4px 13px -3px rgba(0,0,0,0.66);
  
 }
 
@@ -69,8 +81,7 @@ body{
 }
 
 .back{
-    background-image: url('./assets/verso.png');
-    background-size: cover;  
+    background-image: url(./assets/paper.png);
 }
 
 img{
@@ -85,9 +96,15 @@ img{
 .match{
     transform: rotateY(0deg);
     border: 5px solid green;
+    background-color: rgba(0, 128, 0, 0.952);
+    transition: background-color 3s;
 }
 
 .show{
     transform: rotateY(0deg);
 }
 
+.teste{
+    background-image: url('./assets/cool-background.png') !important;
+    background-size: center;
+}

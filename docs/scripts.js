@@ -66,13 +66,12 @@ function match(cardOne,cardTwo) {
 
         cardOne.classList.add('match');
         cardTwo.classList.add('match');
-        
-       playAudio();
+          playAudio();
 
         if(score.innerHTML == '6 jogador de basquete') {
             score.innerHTML = 'Você venceu! Aqui pra você : <3';
-            playParabens();
-            container.classList.add('container-hide');
+            playParabens();     
+            
         }
 
     } else{
