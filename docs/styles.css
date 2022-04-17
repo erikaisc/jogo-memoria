@@ -63,8 +63,11 @@ background-image: url('./assets/CaiosBG2.png');
     position: relative;
     cursor: pointer;
     box-shadow: 3px 4px 13px -3px rgba(0,0,0,0.66);
- 
-}
+    }
+
+    .cell:hover{
+        transform: scale(1.05);
+    }
 
 .front{
     position: absolute;
@@ -115,9 +118,13 @@ footer{
     border: 1px solid rgba(255,255,255,0.375);
 
     text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
    }
 
-   footer h4{
+footer h4{
     font-family: 'Press Start 2P', cursive;
     font-size: 10px;
     margin: 10px 0;
@@ -130,6 +137,6 @@ footer a{
 }
 footer a:hover{
     text-decoration: underline;
-    color: rgb(83, 0, 139);
+    color: rgb(0, 134, 139);
 }
 
