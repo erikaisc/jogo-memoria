@@ -58,8 +58,7 @@ function click() {
 function match(cardOne,cardTwo) {
     if(cardOne.dataset.index == cardTwo.dataset.index) {
         
-
-        score.innerHTML = parseInt(score.innerHTML) + 1 + ' jogador de basquete';
+        score.innerHTML = parseInt(score.innerHTML) + 1;
              
         cardOne.classList.remove('flip');
         cardTwo.classList.remove('flip');
@@ -68,7 +67,7 @@ function match(cardOne,cardTwo) {
         cardTwo.classList.add('match');
           playAudio();
 
-        if(score.innerHTML == '6 jogador de basquete') {
+        if(score.innerHTML == '6') {
             score.innerHTML = 'Você venceu! Aqui pra você : <3';
             playParabens();     
             
@@ -85,4 +84,3 @@ function match(cardOne,cardTwo) {
     }
 }
 
-// teste2

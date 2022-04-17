@@ -5,9 +5,7 @@
 }
 
 body{
-    background: linear-gradient(135deg, #ffffff 25%, transparent 25%) -72px 0, linear-gradient(225deg, #ffffff 25%, transparent 25%) -72px 0, linear-gradient(315deg, #ffffff 25%, transparent 25%), linear-gradient(45deg, #ffffff 25%, transparent 25%);
-    background-size: 144px 144px;
-    background-color: #d80012;
+background-image: url('./assets/CaiosBG2.png');
 
     
 }
@@ -39,7 +37,7 @@ body{
 .score{
     margin-top: 20px;
     font-size: 12px;;
-
+    text-align: center;
     
 }
 
@@ -98,6 +96,7 @@ img{
     border: 5px solid green;
     background-color: rgba(0, 128, 0, 0.952);
     transition: background-color 3s;
+    
 }
 
 .show{
@@ -108,3 +107,29 @@ img{
     background-image: url('./assets/cool-background.png') !important;
     background-size: center;
 }
+
+footer{
+    background: rgba(255,255,255,0.75);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.375);
+
+    text-align: center;
+   }
+
+   footer h4{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 10px;
+    margin: 10px 0;
+    color: black;
+   }
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: rgb(83, 0, 139);
+}
+
